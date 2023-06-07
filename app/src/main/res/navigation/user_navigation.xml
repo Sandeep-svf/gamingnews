@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mobile_navigation.xml"
+    app:startDestination="@id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.bb.gamingnews.ui.dashboard.DashBoardFragment"
+        android:label="DashBoard" >
+        <action
+            android:id="@+id/action_navigation_home_to_videoDetailFragment"
+            app:destination="@id/videoDetailFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/feedFragment"
+        android:name="com.bb.gamingnews.ui.feed.FeedFragment"
+        android:label="FeedFragment" >
+        <action
+            android:id="@+id/action_feedFragment_to_newsDetailFragment"
+            app:destination="@id/newsDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newsDetailFragment"
+        android:name="com.bb.gamingnews.ui.feed.news.NewsDetailFragment"
+        android:label="NewsDetailFragment" >
+
+        <deeplink app:uri="http://admin.gamingnews247.com"
+            app:action="android.intent.action.MY_ACTION"
+            app:mimeType="type/subtype"/>
+    </fragment>
+    <fragment
+        android:id="@+id/newFeedFragment"
+        android:name="com.bb.gamingnews.ui.feed.NewFeedFragment"
+        android:label="NewFeedFragment" />
+    <fragment
+        android:id="@+id/videoFragment"
+        android:name="com.bb.gamingnews.ui.video.VideoFragment"
+        android:label="VideoFragment" />
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="com.bb.gamingnews.ui.notification.NotificationFragment"
+        android:label="NotificationFragment" />
+    <fragment
+        android:id="@+id/faqFragment"
+        android:name="com.bb.gamingnews.ui.faq.FaqFragment"
+        android:label="FaqFragment" />
+    <fragment
+        android:id="@+id/eventFragment"
+        android:name="com.bb.gamingnews.ui.feed.event.EventFragment"
+        android:label="EventFragment" />
+    <fragment
+        android:id="@+id/articleFragment"
+        android:name="com.bb.gamingnews.ui.feed.article.ArticleFragment"
+        android:label="ArticleFragment" />
+    <fragment
+        android:id="@+id/interViewFragment"
+        android:name="com.bb.gamingnews.ui.feed.interview.InterViewFragment"
+        android:label="InterViewFragment" />
+    <fragment
+        android:id="@+id/articleDetailsFragment"
+        android:name="com.bb.gamingnews.ui.feed.article.ArticleDetailsFragment"
+        android:label="ArticleDetailsFragment" />
+    <fragment
+        android:id="@+id/addArticales"
+        android:name="com.bb.gamingnews.ui.userprofile.addArticals.AddArticales"
+        android:label="AddArticales" />
+    <fragment
+        android:id="@+id/userProfileFragment"
+        android:name="com.bb.gamingnews.ui.userprofile.UserProfileFragment"
+        android:label="UserProfileFragment" >
+        <action
+            android:id="@+id/action_userProfileFragment_to_preferencesFragment2"
+            app:destination="@id/preferencesFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/videoDetailFragment"
+        android:name="com.bb.gamingnews.ui.video.VideoDetail.VideoDetailFragment"
+        android:label="VideoDetailFragment" />
+    <fragment
+        android:id="@+id/eventDetailFragment"
+        android:name="com.bb.gamingnews.ui.feed.event.EventDetailFragment"
+        android:label="EventDetailFragment" />
+    <fragment
+        android:id="@+id/termsConditionFragment"
+        android:name="com.bb.gamingnews.ui.tearmandcondi.TandCFragment"
+        android:label="TermsConditionFragment" />
+    <fragment
+        android:id="@+id/preferencesFragment2"
+        android:name="com.bb.gamingnews.ui.account.preferences.PreferencesFragment"
+        android:label="PreferencesFragment" />
+    <fragment
+        android:id="@+id/addArticleUserProfileFragment"
+        android:name="com.bb.gamingnews.ui.userprofile.addArticals.AddArticleUserProfileFragment"
+        android:label="AddArticleUserProfileFragment" />
+    <fragment
+        android:id="@+id/teamMemberProfileFragment"
+        android:name="com.bb.gamingnews.ui.teammemberprofile.TeamMemberProfileFragment"
+        android:label="TeamMemberProfileFragment" />
+
+
+
+<!--    <fragment-->
+<!--        android:id="@+id/signInFragment"-->
+<!--        android:name="com.bb.gamingnews.ui.account.signin.SignInFragment"-->
+<!--        android:label="SignInFragment" >-->
+<!--        <action-->
+<!--            android:id="@+id/action_signInFragment_to_signupFragment"-->
+<!--            app:destination="@id/signupFragment" />-->
+<!--    </fragment>-->
+<!--    <fragment-->
+<!--        android:id="@+id/signupFragment"-->
+<!--        android:name="com.bb.gamingnews.ui.account.Signup.SignupFragment"-->
+<!--        android:label="SignupFragment" >-->
+<!--        <action-->
+<!--            android:id="@+id/action_signupFragment_to_preferencesFragment"-->
+<!--            app:destination="@id/preferencesFragment" />-->
+<!--    </fragment>-->
+    <fragment
+        android:id="@+id/preferencesFragment"
+        android:name="com.bb.gamingnews.ui.account.preferences.PreferencesFragment"
+        android:label="PreferencesFragment" />
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.bb.gamingnews.ui.account.login.LoginFragment"
+        android:label="LoginFragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_signInFragment"
+            app:destination="@id/signInFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_resetPasswordFragment"
+            app:destination="@id/resetPasswordFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/resetPasswordFragment"
+        android:name="com.bb.gamingnews.ui.account.resetpassword.ResetPasswordFragment"
+        android:label="ResetPasswordFragment" >
+        <action
+            android:id="@+id/action_resetPasswordFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_resetPasswordFragment_to_addArticleUserProfileFragment"
+            app:destination="@id/addArticleUserProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/privacypolicysFragment"
+        android:name="com.bb.gamingnews.ui.privacypolicy.PrivacyPolicyFragment"
+        android:label="TearmConditionFragment" />
+    <fragment
+        android:id="@+id/commentFragmant"
+        android:name="com.bb.gamingnews.ui.Comments.CommentFragmant"
+        android:label="CommentFragmant" />
+    <fragment
+        android:id="@+id/eventDetailsNew"
+        android:name="com.bb.gamingnews.ui.feed.event.EventDetailsNew"
+        android:label="EventDetailsNew" />
+    <fragment
+        android:id="@+id/gameTipFragment"
+        android:name="com.bb.gamingnews.ui.gametips.GameTipFragment"
+        android:label="GameTipFragment" />
+    <fragment
+        android:id="@+id/adsDetailsFragment"
+        android:name="com.bb.gamingnews.ui.dashboard.AdsPage.AdsDetailsFragment"
+        android:label="AdsDetailsFragment" />
+
+
+</navigation>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout11"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:background="@drawable/search_bg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView29"
+                android:layout_width="@dimen/_16sdp"
+                android:layout_height="@dimen/_16sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:src="@drawable/search_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:background="@null"
+                android:hint="Tell us your issue"
+                android:textColorHint="@color/textcolor"
+                android:textSize="14sp"
+                style="@style/DefaultDemiBold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView29"
+                app:layout_constraintTop_toTopOf="parent">
+            </androidx.appcompat.widget.AppCompatEditText>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/categoryRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout11"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:listitem="@layout/faq_cat_adapter"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/headingTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Frequently Asked Questions"
+            app:layout_constraintStart_toStartOf="@+id/categoryRecycler"
+            app:layout_constraintTop_toBottomOf="@+id/categoryRecycler"
+            android:layout_marginTop="@dimen/_14sdp"
+            style="@style/Defaultheading"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constrantLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/headingTxt"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:background="@drawable/notification_rectange_border"
+            app:layout_constraintStart_toStartOf="@+id/headingTxt"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="@dimen/_20sdp">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/faqQueRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:orientation="vertical"
+                tools:listitem="@layout/faq_que_adapter"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_75sdp"
+            app:layout_constraintStart_toStartOf="@+id/constrantLayout"
+            app:layout_constraintEnd_toEndOf="@+id/constrantLayout"
+            app:layout_constraintTop_toBottomOf="@+id/constrantLayout"
+            android:layout_marginTop="@dimen/_16sdp"
+            app:cardCornerRadius="10dp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:elevation="2dp"
+
+            >
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/imgbanner">
+
+                <TextView
+                    android:id="@+id/textHeadingdata"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Need more help?"
+                    style="@style/Defaultheading"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_18sdp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/appCompatButton"
+                    style="@style/DefaultDemiBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_20sdp"
+                    android:background="@drawable/button_bg"
+                    android:paddingLeft="@dimen/_16sdp"
+                    android:paddingEnd="@dimen/_16sdp"
+                    android:text="Contact us"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="@+id/textHeadingdata"
+                    app:layout_constraintTop_toBottomOf="@+id/textHeadingdata" />
+
+                <TextView
+                    android:id="@+id/data"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Need more help?"
+                    android:fontFamily="@font/seguisb"
+                    android:textSize="9sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/appCompatButton"
+                    app:layout_constraintTop_toTopOf="@+id/appCompatButton"
+                    app:layout_constraintStart_toEndOf="@+id/appCompatButton"
+                    android:layout_marginStart="@dimen/_10sdp"
+
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
+</layout>

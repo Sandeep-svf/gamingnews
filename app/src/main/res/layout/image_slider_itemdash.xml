@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.bb.gamingnews.utils.RoundableLayout
+        android:id="@+id/roundableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cornerLeftBottom="@dimen/_30sdp"
+        app:cornerLeftSide="@dimen/_30sdp"
+        app:cornerLeftTop="@dimen/_30sdp"
+        app:cornerRightBottom="@dimen/_30sdp"
+        app:cornerRightSide="@dimen/_30sdp"
+        app:cornerRightTop="@dimen/_30sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="@dimen/_14sdp"
+            android:layout_height="@dimen/_14sdp"
+            android:elevation="6dp"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginBottom="@dimen/_16sdp"
+            android:src="@drawable/profile_icon_dash"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:id="@+id/imgMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_video_icons"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+        </ImageView>
+        <TextView
+            android:id="@+id/txtheading"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="WSOP Online 2021:
+Justin Lapka Wins Event #17: $400
+NLH 8-Max For $75,371"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:maxLines="3"
+            android:layout_marginEnd="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="@dimen/_20sdp"
+            app:layout_constraintStart_toStartOf="@+id/imageView10"
+            app:layout_constraintBottom_toTopOf="@+id/imageView10"
+            android:fontFamily="@font/segoe_ui_bold"/>
+        <TextView
+            style="@style/DefaultDemiBold"
+            android:id="@+id/txtCreate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OPN NewsDesk"
+            android:textSize="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView10"
+            app:layout_constraintStart_toEndOf="@+id/imageView10"
+            app:layout_constraintTop_toTopOf="@+id/imageView10" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="@dimen/_14sdp"
+            android:layout_height="@dimen/_14sdp"
+            android:layout_marginStart="@dimen/_8sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/txtCreate"
+            app:layout_constraintStart_toEndOf="@+id/txtCreate"
+            app:layout_constraintTop_toTopOf="@+id/txtCreate"
+            app:srcCompat="@drawable/calender_icon" />
+
+        <TextView
+            android:id="@+id/txtDate"
+            style="@style/DefaultDemiBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="July 19, 2021"
+            android:textSize="@dimen/_10sdp"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView12"
+            app:layout_constraintStart_toEndOf="@+id/imageView12"
+            app:layout_constraintTop_toTopOf="@+id/imageView12" />
+
+
+    </com.bb.gamingnews.utils.RoundableLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

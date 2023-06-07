@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/_7sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/imageCardView"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_160sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+
+        app:cardCornerRadius="@dimen/_16sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/imgbanner">
+
+        </ImageView>
+
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/txtHead"
+        style="@style/DefaultTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="Foxwoods CEO John James Steps Down Amid Coronavirus Pandemic"
+        android:textStyle="bold"
+        android:textSize="@dimen/_13sdp"
+        app:layout_constraintEnd_toEndOf="@+id/imageCardView"
+        app:layout_constraintStart_toStartOf="@+id/imageCardView"
+        app:layout_constraintTop_toBottomOf="@+id/imageCardView" />
+
+    <TextView
+        android:id="@+id/newsContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:maxLines="3"
+        android:text="After serving for just eight months, John James has stepped down from his position as CEO and President of Foxwoods Resort Casino in Connecticut. The 59-year-old James was hired just last "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtHead">
+
+    </TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

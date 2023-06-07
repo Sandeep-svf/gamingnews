@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rectange_gray_background_15dp"
+    android:backgroundTint="@color/white">
+
+    <TextView
+        android:id="@+id/heading"
+        style="@style/DefaultTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_24sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:text="Deal of the\nDay!"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get 20% off now valid\nfor all Fantasy Sports*"
+        app:layout_constraintTop_toBottomOf="@+id/heading"
+        android:textSize="16sp"
+        style="@style/DefaultTextStyle"
+        app:layout_constraintStart_toStartOf="@+id/heading"
+        android:layout_marginTop="@dimen/_6sdp"/>
+    <TextView
+        android:id="@+id/availHereText"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_36sdp"
+        android:text="TAP HERE TO AVAIL"
+        android:textSize="17sp"
+        style="@style/DefaultTextStyle"
+        android:textColor="@color/redColor"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/text"
+        android:background="@drawable/offer_background"
+        app:layout_constraintStart_toStartOf="@+id/text"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:gravity="center"
+        android:paddingStart="@dimen/_14sdp"
+        android:paddingEnd="@dimen/_14sdp"/>
+    <TextView
+        android:id="@+id/terms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Terms &amp; conditions apply*"
+        app:layout_constraintTop_toBottomOf="@+id/availHereText"
+        android:textSize="9sp"
+        style="@style/DefaultTextStyle"
+        app:layout_constraintStart_toStartOf="@+id/heading"
+        android:layout_marginTop="@dimen/_6sdp"/>
+    <TextView
+        android:id="@+id/hours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="only for 48 hours"
+        app:layout_constraintTop_toBottomOf="@+id/terms"
+        android:textSize="9sp"
+        style="@style/Defaultheading"
+        android:layout_marginBottom="@dimen/_15sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/heading"
+       />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

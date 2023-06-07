@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.userprofile.addArticals.AddArticales">
+
+        <TextView
+            android:id="@+id/articals"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Writing article on"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:textColor="@color/textcolor"
+            android:textSize="16sp"
+            android:fontFamily="@font/segoe_ui_bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/_10sdp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/categoriesRecyclwer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/articals"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="@+id/articals"
+            app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
+            android:orientation="horizontal"
+            tools:listitem="@layout/articales_categories_adapter"
+            app:layout_constraintTop_toBottomOf="@+id/articals" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:background="@drawable/bg_edit_text"
+            app:layout_constraintEnd_toEndOf="@+id/categoriesRecyclwer"
+            app:layout_constraintStart_toStartOf="@+id/categoriesRecyclwer"
+            app:layout_constraintTop_toBottomOf="@+id/categoriesRecyclwer">
+
+            <EditText
+                android:id="@+id/editTextTextPersonName2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8sdp"
+                android:background="@null"
+                android:includeFontPadding="false"
+                android:paddingStart="@dimen/_10sdp"
+                android:fontFamily="@font/seguisb"
+                android:inputType="textPersonName"
+                android:textColorHint="@color/textcolor"
+                android:textColor="@color/textcolor"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
+            app:layout_constraintEnd_toEndOf="@+id/textView10"
+            app:layout_constraintStart_toStartOf="@+id/textView10"
+            app:layout_constraintTop_toTopOf="@+id/constraintLayout2" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_24sdp"
+            android:elevation="6dp"
+            android:padding="@dimen/_2sdp"
+            android:paddingStart="@dimen/_4sdp"
+            android:fontFamily="@font/seguisb"
+            android:paddingEnd="@dimen/_4sdp"
+            android:textSize="12sp"
+            android:text="Article Header"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
+            app:layout_constraintStart_toStartOf="@+id/constraintLayout2"
+            app:layout_constraintTop_toTopOf="@+id/constraintLayout2" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout3"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:background="@drawable/bg_edit_text"
+
+            app:layout_constraintEnd_toEndOf="@+id/constraintLayout2"
+            app:layout_constraintStart_toStartOf="@+id/constraintLayout2"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+
+            <EditText
+                android:id="@+id/descriptionTxt"
+                style="@style/DefaultTextStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8sdp"
+                android:background="@null"
+                android:paddingTop="10dp"
+                android:hint="Description "
+                android:paddingStart="@dimen/_10sdp"
+                android:fontFamily="@font/seguisb"
+                android:inputType="textMultiLine"
+                android:textColorHint="@color/textcolor"
+                android:textColor="@color/textcolor"
+                android:gravity="top"
+                android:maxLines="4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
+            app:layout_constraintEnd_toEndOf="@+id/textView9"
+            app:layout_constraintStart_toStartOf="@+id/textView9"
+            app:layout_constraintTop_toTopOf="@+id/constraintLayout3" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_24sdp"
+            android:elevation="6dp"
+            android:padding="@dimen/_2sdp"
+            android:paddingStart="@dimen/_4sdp"
+            android:paddingEnd="@dimen/_4sdp"
+            android:fontFamily="@font/seguisb"
+            android:textSize="12sp"
+            android:includeFontPadding="false"
+            android:text="Article Description"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayout3"
+            app:layout_constraintStart_toStartOf="@+id/constraintLayout3"
+            app:layout_constraintTop_toTopOf="@+id/constraintLayout3" />
+
+        <TextView
+            android:id="@+id/attachmentTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Attach your document"
+            android:drawableStart="@drawable/ic_icon_attachment"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout3"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/segoe_ui_bold"
+            android:textColor="@color/textcolor"
+            android:layout_marginTop="@dimen/_7sdp"
+            app:layout_constraintStart_toStartOf="@+id/constraintLayout3"
+            app:layout_constraintEnd_toEndOf="@+id/constraintLayout3" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv"
+            android:layout_width="@dimen/_38sdp"
+            android:layout_height="@dimen/_38sdp"
+            app:cardCornerRadius="7dp"
+
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintTop_toBottomOf="@+id/attachmentTxt"
+            app:layout_constraintStart_toStartOf="@+id/attachmentTxt"
+            android:elevation="2dp">
+            <ImageView
+                android:id="@+id/imgarticals"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/placeholder"
+                android:scaleType="fitXY"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/filesRecycler"
+            android:layout_width="0dp"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="@+id/attachmentTxt"
+            app:layout_constraintEnd_toEndOf="@+id/attachmentTxt"
+            android:layout_marginTop="@dimen/_10sdp"
+            tools:listitem="@layout/attach_files_adapter"
+            app:layout_constraintTop_toBottomOf="@+id/attachmentTxt" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/Cvsubmit"
+
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:elevation="2dp"
+            app:cardCornerRadius="@dimen/_20sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:cardBackgroundColor="@color/textColorBlack"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/arrow"
+                app:tint="@color/white"
+                android:padding="@dimen/_10sdp" />
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

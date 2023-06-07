@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "822020086089",
+    "project_id": "gn24x7-6b2ec",
+    "storage_bucket": "gn24x7-6b2ec.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:822020086089:android:529c2c367bc82efb2da298",
+        "android_client_info": {
+          "package_name": "com.bb.gamingnews"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "822020086089-a6p20c0bv0hpc5nlciosvudiqea0ts8l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBofUxxA8Jv1VNfsYKP1qQuyixK9m7NPlg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "822020086089-a6p20c0bv0hpc5nlciosvudiqea0ts8l.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "822020086089-3agc0lbjvebp85i49h1j6vt8ison6teb.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.bizbrolly.GN.GamingNews"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

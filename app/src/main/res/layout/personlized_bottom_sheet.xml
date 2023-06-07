@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bottom_sheet_background"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/textView36"
+        style="@style/DefaultTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Personalize your feed"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="@dimen/_18sdp"
+        android:layout_marginTop="@dimen/_27sdp"
+        app:layout_constraintStart_toStartOf="parent"
+         />
+    <TextView
+        android:id="@+id/prefrenceTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/all_data"
+        android:layout_marginEnd="@dimen/_18sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:textSize="14sp"
+        style="@style/DefaultDemiBold"
+        android:justificationMode="inter_word"
+        app:layout_constraintTop_toBottomOf="@+id/textView36"
+        app:layout_constraintStart_toStartOf="@+id/textView36"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/learnMore"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Learn more..."
+        style="@style/DefaultTextStyle"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textSize="14sp"
+        android:textColor="@color/textcoloryello"
+        app:layout_constraintStart_toStartOf="@+id/prefrenceTxt"
+        app:layout_constraintTop_toBottomOf="@+id/prefrenceTxt" />
+
+    <TextView
+        android:id="@+id/continueBtn"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_bg"
+        android:padding="@dimen/_10sdp"
+        android:text="continue"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginBottom="@dimen/_16sdp"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@+id/learnMore"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

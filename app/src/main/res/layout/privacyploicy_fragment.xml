@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/toolbarlight"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:paddingTop="@dimen/_35sdp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView40"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:src="@drawable/back_icon"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                style="@style/Defaultheading"
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Conatct And Support "
+                android:layout_marginStart="@dimen/_10sdp"
+                android:textSize="19sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView40"
+                app:layout_constraintStart_toEndOf="@+id/imageView40"
+                app:layout_constraintTop_toTopOf="@+id/imageView40" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/containersTxt"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="hjgjhgjb"-->
+<!--            android:justificationMode="inter_word"-->
+<!--            android:layout_marginStart="@dimen/_16sdp"-->
+<!--            android:layout_marginEnd="@dimen/_16sdp"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/toolbarlight"-->
+<!--            android:layout_marginTop="@dimen/_10sdp"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            />-->
+<!--        <CheckBox-->
+<!--            android:visibility="gone"-->
+<!--            android:id="@+id/checkbox"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/containersTxt"-->
+<!--            android:text="@string/agree_to_terms_conditions"-->
+<!--            app:layout_constraintStart_toStartOf="@+id/containersTxt"-->
+<!--            app:layout_constraintEnd_toEndOf="@+id/containersTxt"/>-->
+<!--        <androidx.appcompat.widget.AppCompatButton-->
+<!--            android:layout_width="@dimen/_150sdp"-->
+<!--            android:layout_height="@dimen/_40sdp"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/checkbox"-->
+<!--            android:text="Accept"-->
+<!--            android:visibility="gone"-->
+<!--            android:id="@+id/btnagree"-->
+<!--            android:textColor="@color/white"-->
+<!--            style="@style/Defaultheading"-->
+<!--            android:background="@drawable/button_bg"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            android:layout_marginTop="@dimen/_35sdp"/>-->
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbarlight"
+            android:layout_height="0dp">
+            <WebView
+                android:id="@+id/webView"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></WebView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

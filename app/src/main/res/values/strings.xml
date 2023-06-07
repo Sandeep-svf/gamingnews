@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">GN 24x7</string>
+
+    <!--Errors-->
+    <string name="error_exception">Some Exception Occurred</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="agree_to_terms_conditions"><b>Agree to</b> <font color="#FFC312">Terms &amp; Condition</font></string>
+    <string name="didn_t_receive_the_verification_otp_resend_otp">Didn\'t receive the verification OTP?<font color="#FFC312"> Resend OTP</font></string>
+    <string name="all_data">To personalize your experience and improve product features, this app sends Gaming News 24*7 information about how you use it. By continuing to use the app, you agree to share the data with Online Poker News, you can change your preferences in the setting at any time.</string>
+    <string name="terms_conditions"><![CDATA[Terms & Conditions]]></string>
+    <string name="by_rajveer_singh">by <b>Rajveer Singh</b></string>
+    <string name="comment">comment</string>
+    <string name="ashok">ashok</string>
+    <string name="time">Time</string>
+<!--    <string name="fb_no">337765074885658</string>-->
+
+    <string name="facebook_app_id">1494328571072761</string>
+    <string name="fb_login_protocol_scheme">fb1494328571072761</string>
+    <string name="facebook_client_token">ee5d4be06dacc679408cb33c820107f6</string>
+    <string name="googleapi">AIzaSyCoeVNZeGLHlj9v-DhooP4lQCmkJItgYek</string>
+
+</resources>
